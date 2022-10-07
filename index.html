@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Listas estruturadas</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
+    <div>
+      <dl>
+        <dt>Samsumg</dt>
+        <dd>Possui ótimos serviços relacionados a sistemas embarcados</dd>
+        <dt>Marisa</dt>
+        <dd>Possui ótimos serviços relacionados a design e moda</dd>
+        <dt>Americanas</dt>
+        <dd>Possui excelente sistema lógico de venda de produto de estoque</dd>
+      </dl>
+      <div id="tabela">
+        <table border="1" style="width: 300px; height: 150px" cellspacing="2">
+          <caption>
+            Conteúdo de clientes da empresa
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Empresa</th>
+              <th scope="col">País</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HLJS</td>
+              <td>Alemanha</td>
+              <td>Akhein</td>
+            </tr>
+            <tr>
+              <td>Umbrella</td>
+              <td colspan="2">EUA</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Nome</td>
+              <td colspan="2">Endereço</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
