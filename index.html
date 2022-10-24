@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <!-- <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
+
+        <fieldset>
+            <input name="assunto" id="assunto" type="text">
+            <input id="senha" name="senha" type="password">
+            <input id="idade" name="idade" type="number">
+        </fieldset>
+
+
+        <br>
+        <fieldset>
+            <select name="motivo" id="motivo">
+                <option value="sem_motivo">Não selecionado</option>
+                <option value="pq_sim">Porque sim</option>
+                <option value="elogio">Aula Legal</option>
+                <option value="reclamação">Aula péssima!</option>
+            </select>
+
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </fieldset>
+
+    </form> -->
+
+    <form action="">
+        <fieldset>
+            <div>
+                <label for="pais">Pais*</label><br>
+
+                <select name="pais" id="pais">
+                    <option value="BR">Brasil</option>
+                </select>
+            </div>
+            <div>
+                <label for="cep">CEP*</label>
+                <input name="cep" id="cep" type="text" value="60335-010" maxlength="10">
+            </div>
+            <div>
+                <label for="endereco">Endereço*</label>
+                <input name="endereco" id="endereco" type="text" value="test">
+            </div>
+            <div>
+                <label for="numero">Numero*</label>
+                <input name="numero" id="numero" type="number">
+            </div>
+            <div>
+                <label for="complemento">Complemento</label>
+                <input name="complemento" id="complemento" type="text">
+            </div>
+            <div>
+                <label for="estado">UF*</label>
+                <select name="estado" id="estado">
+                    <option value="CE" selected>Ceará</option>
+                </select>
+            </div>
+            <div>
+                <label for="cidade">Cidade*</label>
+                <select name="cidade" id="cidade">
+                    <option value="" selected>Selecione...</option>
+                </select>
+            </div>
+            <div>
+                <label for="Bairro">Bairro</label>
+                <input name="Bairro" id="Bairro" type="text">
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <div>Dados Profissionais</div>
+        </fieldset>
+        <button type="submit">Atualizar Dados</button>
+    </form>
+</body>
+
+</html>
