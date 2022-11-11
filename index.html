@@ -5,134 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Atividade Prática</title>
 </head>
 
 <body>
 
-    <!-- <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
+    <h1>Soma</h1>
+    <input type="number" name="valor1" id="valor1">
+    <span>+</span>
+    <input type="number" name="valor2" id="valor2">
 
-        <fieldset>
-            <input name="assunto" id="assunto" type="text">
-            <input id="senha" name="senha" type="password">
-            <input id="idade" name="idade" type="number">
-        </fieldset>
+    <button id="resultado">Resultado</button>
+
+    <p id="mostrarResultado"></p>
+    <script>
 
 
-        <br>
-        <fieldset>
-            <select name="motivo" id="motivo">
-                <option value="sem_motivo">Não selecionado</option>
-                <option value="pq_sim">Porque sim</option>
-                <option value="elogio">Aula Legal</option>
-                <option value="reclamação">Aula péssima!</option>
-            </select>
 
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-            <button type="submit">Enviar</button>
-        </fieldset>
+        document.querySelector("#resultado").addEventListener("click", () => {
+            const mostrarResultado = document.querySelector("#mostrarResultado")
+            const valor1 = document.getElementById("valor1").value;
+            const valor2 = document.getElementById("valor2").value;
+            const resultado = Number(valor1) + Number(valor2)
+            mostrarResultado.innerHTML = ""
+            if (resultado > 10) {
+                mostrarResultado.innerHTML = `Valor acima de 10, o resultado foi: ${resultado}`
 
-    </form> -->
+            } else {
+                mostrarResultado.innerHTML = `Valor menor de 10, o resultado foi: ${resultado}`
 
-    <form action="">
-        <fieldset>
-            <div>
-                <label for="pais">Pais*</label><br>
+            }
 
-                <select name="pais" id="pais">
-                    <option value="BR">Brasil</option>
-                </select>
-            </div>
-            <div>
-                <label for="cep">CEP*</label>
-                <input name="cep" id="cep" type="text" value="60335-010" maxlength="10">
-            </div>
-            <div>
-                <label for="endereco">Endereço*</label>
-                <input name="endereco" id="endereco" type="text" value="test">
-            </div>
-            <div>
-                <label for="numero">Numero*</label>
-                <input name="numero" id="numero" type="number">
-            </div>
-            <div>
-                <label for="complemento">Complemento</label>
-                <input name="complemento" id="complemento" type="text">
-            </div>
-            <div>
-                <label for="estado">UF*</label>
-                <select name="estado" id="estado">
-                    <option value="CE" selected>Ceará</option>
-                </select>
-            </div>
-            <div>
-                <label for="cidade">Cidade*</label>
-                <select name="cidade" id="cidade">
-                    <option value="" selected>Selecione...</option>
-                </select>
-            </div>
-            <div>
-                <label for="Bairro">Bairro</label>
-                <input name="Bairro" id="Bairro" type="text">
-            </div>
-        </fieldset>
-        <hr>
-        <fieldset>
-            <div>Dados Profissionais</div>
-        </fieldset>
-        <button type="submit">Atualizar Dados</button>
-    </form>
+        })
+
+
+    </script>
 </body>
 
-</html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listas estruturadas</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div>
-      <dl>
-        <dt>Samsumg</dt>
-        <dd>Possui ótimos serviços relacionados a sistemas embarcados</dd>
-        <dt>Marisa</dt>
-        <dd>Possui ótimos serviços relacionados a design e moda</dd>
-        <dt>Americanas</dt>
-        <dd>Possui excelente sistema lógico de venda de produto de estoque</dd>
-      </dl>
-      <div id="tabela">
-        <table border="1" style="width: 300px; height: 150px" cellspacing="2">
-          <caption>
-            Conteúdo de clientes da empresa
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Empresa</th>
-              <th scope="col">País</th>
-              <th scope="col">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HLJS</td>
-              <td>Alemanha</td>
-              <td>Akhein</td>
-            </tr>
-            <tr>
-              <td>Umbrella</td>
-              <td colspan="2">EUA</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Nome</td>
-              <td colspan="2">Endereço</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </div>
-  </body>
 </html>
